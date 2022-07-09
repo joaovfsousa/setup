@@ -33,6 +33,7 @@ PACKAGES_TO_INSTALL=(
   vlc
   code
   sensors
+  silversearcher-ag
 )
 
 sudo rm /var/lib/dpkg/lock-frontend
@@ -104,5 +105,4 @@ EXTENSIONS_TO_INSTALL = (
 for extension in ${EXTENSIONS_TO_INSTALL[@]}; do
   echo "Install $extension"
 done
-
 
