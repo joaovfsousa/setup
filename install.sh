@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-mkdir -p /home/joaovfsousa/Projects
+mkdir /home/joaovfsousa/Projects
+mkdir /home/joaovfsousa/.fonts
 
 BASE_INSTALL_DIR="/home/joaovfsousa/install"
 mkdir -p $BASE_INSTALL_DIR
@@ -34,6 +35,7 @@ PACKAGES_TO_INSTALL=(
   code
   sensors
   silversearcher-ag
+  unzip
 )
 
 sudo rm /var/lib/dpkg/lock-frontend
@@ -106,3 +108,4 @@ for extension in ${EXTENSIONS_TO_INSTALL[@]}; do
   echo "Install $extension"
 done
 
+echo "Install Jetbrains Mono NF"
