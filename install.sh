@@ -88,6 +88,10 @@ git clone https://github.com/joaovfsousa/dotfiles.git $BASE_INSTALL_DIR
 chmod +x $BASE_INSTALL_DIR/install
 $BASE_INSTALL_DIR/install
 
+wget -q https://raw.githubusercontent.com/marcopaganini/gnome-cedilla-fix/master/fix-cedilla -O fix-cedilla
+chmod 755 fix-cedilla
+sudo ./fix-cedilla
+
 #
 EXTENSIONS_TO_INSTALL = (
   Bluetooth Quick Connect
@@ -109,3 +113,4 @@ for extension in ${EXTENSIONS_TO_INSTALL[@]}; do
 done
 
 echo "Install Jetbrains Mono NF"
+
